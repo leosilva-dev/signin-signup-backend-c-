@@ -17,6 +17,7 @@ namespace Backend.Models
 
         [Required(ErrorMessage = "Campo obrigatório")]
         [MaxLength(200, ErrorMessage = "Tamanho máximo atingido")]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório")]
